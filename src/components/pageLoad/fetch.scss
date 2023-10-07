@@ -1,0 +1,31 @@
+.Fetch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        margin-top: 75px;
+        li {
+            border-bottom: 1px solid black;
+            line-height: 30px;
+        }
+
+        img {
+            margin-top: 20px;
+            margin-left: 65px;
+        }
+    }
+}
+
+.Fetch-pending {
+    p {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+}

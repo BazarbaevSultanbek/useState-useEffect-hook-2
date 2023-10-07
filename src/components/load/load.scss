@@ -1,0 +1,83 @@
+.Load{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Load-navi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    button{
+        border: none;
+        background-color: rgb(77, 79, 84);
+        border-radius: 50%;
+        color: white;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+    }
+}
+.Load-unmount{
+    border: none;
+    border-radius: 7px;
+    background-color: #4949f5;
+    color: white;
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.Load-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    height: 300px;
+    width: 450px;
+
+    &-in {
+        height: 600px;
+        width: 450px;
+
+        h4 {
+            margin-top: 25px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}
+.Load-pending{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+.Load-animation{
+    display: block;
+    padding: 15px;
+    transform: translate(-50%, 0);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: #4949f5;
+    animation: load infinite;
+    animation-duration: .8s;
+}
+
+@keyframes load {
+    0%{
+        padding: 0;
+    }
+    98%{
+        padding: 15px;
+    }
+    100%{
+        opacity: 0;
+    }
+}
