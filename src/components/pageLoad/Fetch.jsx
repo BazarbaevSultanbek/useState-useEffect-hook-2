@@ -19,8 +19,12 @@ function Fetch() {
                 setImg(users.results[0].picture.large);
 
                 setTimeout(() => {
-                    el.current.style.display = "none";
-                    pend.current.style.display = 'block';
+                    if (el.current) {
+                        el.current.style.display = "none";
+                    }
+                    if (pend.current) {
+                        pend.current.style.display = 'block';
+                    }
                     setName("");
                     setEmail("");
                     setPhone("");
