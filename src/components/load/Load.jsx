@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
-import "./Load.scss"
+import "./load.scss"
 const Load = () => {
     const [title, setTitle] = useState("");
     const [comments, SetComments] = useState("");
